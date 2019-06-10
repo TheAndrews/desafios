@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api')
 const cheerio = require('cheerio');
 const axios = require("axios");
-const TOKEN = '768927228:AAHUVurS5DpCBg3AQdNSUbYVWjXHMBHexZI'
+const TOKEN = 'secret_token'
 const bot = new TelegramBot(TOKEN, { polling: true })
 
 bot.onText(/\/NadaPraFazer (.+)/, async (msg, match) => {
